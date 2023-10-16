@@ -54,7 +54,7 @@ const options = {
     }
 
   return (
-    <div className="card shadow-lg rounded-xl w-full max-w-2xl p-10 bg-primary text-primary-content">
+    <div className="card shadow-lg rounded-xl w-full max-w-2xl p-10 bg-gradient-to-r from-blue-300 to-blue-500 text-white">
       <div className="card-body space-y-4">
         <h2 className="card-title text-2xl font-bold">{habit.title}</h2>
         <div className="flex justify-between items-center">

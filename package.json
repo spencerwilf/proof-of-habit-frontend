@@ -11,6 +11,11 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^1.7.17",
     "@mui/material": "^5.14.13",
     "@rainbow-me/rainbowkit": "^1.1.1",
@@ -23,6 +28,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10",
+    "daisyui": "^3.9.2",
     "postcss": "^8",
     "tailwindcss": "^3"
   }

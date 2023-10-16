@@ -23,6 +23,9 @@ export default function RootLayout({ children }) {
     <WagmiConfig config={config}>
       <ConnectKitProvider chains={chains}>
     <html lang="en">
+      <link rel="preconnect" href="https://fonts.googleapis.com"></link>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"></link>
       <body>{children}</body>
     </html>
     </ConnectKitProvider>

@@ -14,6 +14,7 @@ module.exports = {
       },
     },
   },
+  
 theme: {
     extend: {
       backgroundImage: {
@@ -21,6 +22,14 @@ theme: {
       },
     },
   },
-  plugins: [],
+
+  theme: {
+    extend: {
+      fontFamily: {
+        default: ['Montserrat']
+      }
+    }
+  },
+  plugins: [require("daisyui")],
   darkMode: 'class'
 }
