@@ -12,8 +12,13 @@ const CommitmentBar = () => {
 
     <div className="bottom-shadow">
       <div className="flex justify-between items-center mx-auto w-4/5 py-4 ">
-        <div className="text-xl font-bold">Your Habits</div>
-        {isConnected && <CommitmentModal/>}
+        {isConnected && (
+          <>
+           <div className="text-xl font-bold">Your Habits</div>
+        <CommitmentModal/>
+        </>
+        )}
+       
       </div>
       
     </div>

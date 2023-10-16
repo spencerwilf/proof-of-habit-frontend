@@ -20,7 +20,7 @@ const NavBar = () => {
               <li><a target='_blank' href="https://www.linkedin.com/in/spencer-wilfahrt-1a4604156/" className="text-white">
                 <FontAwesomeIcon icon={faLinkedin} />
                 </a></li>
-              <li><a target='_blank' href="https://github.com/spencerwilf/proof-of-habit-contracts" className="text-white">
+              <li><a target='_blank' href="https://github.com/spencerwilf" className="text-white">
                 <FontAwesomeIcon icon={faGithub} />
                 </a></li>
               <li><a target='_blank' href="https://sepolia.etherscan.io/address/0x7738c04168bf65206336a9474ce0b9c2ef2a144d#code" className="text-white">
