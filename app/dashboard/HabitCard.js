@@ -27,8 +27,8 @@ const HabitCard = ({ habit }) => {
 
 const options = {
     weekday: 'long',
-    hour: '2-digit',
-    minute: '2-digit',
+    hour: 'numeric',
+    minute: 'numeric',
     hour12: true
 };
 
@@ -58,7 +58,7 @@ const options = {
       <div className="card-body space-y-4">
         <h2 className="card-title text-2xl font-bold">{habit.title}</h2>
         <div className="flex justify-between items-center">
-          <span>Amount:</span>
+          <span>Amount staked:</span>
           <span className="font-semibold">{formatEther(habit.amount.toString())} ETH</span>
         </div>
         <div className="flex justify-between items-center">

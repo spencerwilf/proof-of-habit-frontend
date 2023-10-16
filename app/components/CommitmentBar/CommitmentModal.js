@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react'
 import abi from "../../../abi.json"
 import { readContract, waitForTransaction, writeContract } from "wagmi/actions";
 import { parseEther, isAddress } from 'viem';
+import { eventEmitter } from './events';
 
 
 const CommitmentModal = () => {
@@ -17,13 +18,15 @@ const CommitmentModal = () => {
     const [txSuccess, setTxSuccess] = useState(false)
     const [hasSubmitted, setHasSubmitted] = useState(false)
     const [errors, setErrors] = useState({})
+    const [habitCreated, setHabitCreated] = useState(false);
 
         const isNumber = (input) => {
         const regex = /^\d+$/;
         return regex.test(input);
     }
 
-    useEffect(() => {
+
+useEffect(() => {
   const modal = document.getElementById('my_modal_1');
   
   const handleOutsideClick = (event) => {
@@ -34,10 +37,16 @@ const CommitmentModal = () => {
 
   modal.addEventListener('click', handleOutsideClick);
   
+  // Automatically close the modal if loading is false
+  if (!loading) {
+    modal.close();
+  }
+  
   return () => {
     modal.removeEventListener('click', handleOutsideClick);
   };
-}, []);
+}, [loading]);  // Add loading to the dependency array
+
 
 
 useEffect(() => {
@@ -68,6 +77,9 @@ useEffect(() => {
             setLoading(true)
             await waitForTransaction(tx)
             setTxSuccess(true)
+            setHabitCreated(true)
+
+            eventEmitter.emit('habitCreated')
 
         } catch(e) {
             console.log(e)

@@ -5,9 +5,7 @@ import CommitmentBar from '../components/CommitmentBar/CommitmentBar'
 import UserHabits from './UserHabits'
 
 const Dashboard = () => {
-
     
-
   return (
     <div>
     <NavBar/>
