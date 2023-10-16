@@ -14,5 +14,13 @@ module.exports = {
       },
     },
   },
+theme: {
+    extend: {
+      backgroundImage: {
+        'green-gradient': 'linear-gradient(to right, #126761 0%, #1D968A 50%, #25B9A8 100%)',
+      },
+    },
+  },
   plugins: [],
+  darkMode: 'class'
 }
