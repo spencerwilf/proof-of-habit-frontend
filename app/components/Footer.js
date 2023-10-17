@@ -14,12 +14,12 @@ const Footer = () => {
             </div>
             <ul className="flex space-x-4">
                 <li className='text-lg'>
-                    <a target='_blank' href="https://www.linkedin.com/in/spencer-wilfahrt-1a4604156/" className="text-white">
+                    <a rel='noopener noreferrer' target='_blank' href="https://www.linkedin.com/in/spencer-wilfahrt-1a4604156/" className="text-white">
                         <FontAwesomeIcon icon={faLinkedin} />
                     </a>
                 </li>
                 <li className='text-lg'>
-                    <a target='_blank' href="https://github.com/spencerwilf" className="text-white">
+                    <a rel='noopener noreferrer' target='_blank' href="https://github.com/spencerwilf" className="text-white">
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </li>

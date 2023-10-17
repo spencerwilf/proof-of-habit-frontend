@@ -128,19 +128,19 @@ export default function Home() {
 <div className="bg-gradient-to-r from-blue-300 to-blue-500 text-white flex flex-col items-center justify-center p-4 bg-white rounded shadow h-[300px]">
   <h3 className="text-2xl font-bold text-center mt-4 mb-4">Decentralized</h3>
   <img src="/decentralized.png" className="object-contain w-full h-40 p-2 mb-4" />
- 
+ <p>Built on the Ethereum network.</p>
 </div>
 
 <div className="bg-gradient-to-r from-blue-300 to-blue-500 text-white flex flex-col items-center justify-center p-4 bg-white rounded shadow h-[300px]">
   <h3 className="text-2xl font-bold text-center mt-4 mb-4">Trustless</h3>
   <img src="/trustless.png" className="object-contain w-full h-40 p-2 mb-4" />
-
+ <p>Don't trust us or our servers. Trust the code.</p>
 </div>
 
 <div className="bg-gradient-to-r from-blue-300 to-blue-500 text-white flex flex-col items-center justify-center p-4 bg-white rounded shadow h-[300px]">
   <h3 className="text-2xl font-bold text-center mt-4 mb-4">Cutting edge</h3>
   <img src="/lightning.png" className="object-contain w-full h-40 p-2 mb-4" />
-
+<p>Built with the latest and greatest blockchain technology</p>
 </div>
 
 

@@ -76,7 +76,7 @@ const uncompletedHabits = habits.filter(habit => !habit.completed);
             ))
         ) : (
             <div className="col-span-full flex justify-center items-center">
-                <div>No habits yet</div>
+                <div>No habits yet!</div>
             </div>
         )
     ) : (
