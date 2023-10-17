@@ -66,24 +66,29 @@ const uncompletedHabits = habits.filter(habit => !habit.completed);
 
   return (
 
- <div className="my-10 mx-auto w-full px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 max-w-7xl flex justify-center">
+<div className="my-10 mx-auto w-full px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 max-w-7xl flex justify-center">
     {isConnected ? (
-      uncompletedHabits.length ? (
-        uncompletedHabits.map((habit, i) => (
-          <div key={i} className="m-4">
-            <HabitCard habit={habit} />
-          </div>
-        ))
-      ) : (
-        <div>No habits yet</div>
-      )
+        uncompletedHabits.length ? (
+            uncompletedHabits.map((habit, i) => (
+                <div key={i} className="m-4">
+                    <HabitCard habit={habit} />
+                </div>
+            ))
+        ) : (
+            <div className="col-span-full flex justify-center items-center">
+                <div>No habits yet</div>
+            </div>
+        )
     ) : (
-      <div>
-        <h2>Please connect your wallet</h2>
-        <StyledConnectButton />
-      </div>
+        <div className="col-span-full flex justify-center items-center">
+            <div>
+                <h2>Please connect your wallet</h2>
+                <StyledConnectButton />
+            </div>
+        </div>
     )}
-  </div>
+</div>
+
 
 
   )

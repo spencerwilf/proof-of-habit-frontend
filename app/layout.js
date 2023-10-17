@@ -3,6 +3,7 @@
 import { sepolia } from "wagmi/chains";
 import { WagmiConfig, createConfig } from "wagmi";
 import { ConnectKitProvider, ConnectKitButton, getDefaultConfig } from "connectkit";
+import Head from "next/head";
 
 const alchemyId = process.env.ALCHEMY_API_KEY;
 const walletConnectProjectId = process.env.WALLETCONNECT_PROJECT_ID;
@@ -36,3 +37,4 @@ export default function RootLayout({ children }) {
     </WagmiConfig>
   )
 }
+
