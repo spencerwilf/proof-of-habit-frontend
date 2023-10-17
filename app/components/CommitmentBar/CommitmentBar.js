@@ -8,16 +8,18 @@ const CommitmentBar = () => {
 
   const {isConnected} = useAccount();
 
+  if (!isConnected) return null 
+
   return (
 
     <div className="bottom-shadow">
       <div className="flex justify-between items-center mx-auto w-4/5 py-4 ">
-        {isConnected && (
-          <>
+  
+      
            <div className="text-xl font-bold">Your Habits</div>
         <CommitmentModal/>
-        </>
-        )}
+   
+   
        
       </div>
       
