@@ -63,63 +63,49 @@ export default function Home() {
 
 
       {/* Hero Section */}
-      <section className="flex-grow flex items-center justify-center text-center p-4 bg-gradient-to-r from-blue-300 to-blue-500 text-white">
-        <div className='flex flex-col items-center'>
-          
-
-
-<div className="carousel-container relative max-w-screen-xl mx-auto flex justify-between items-center py-10">
-
-  <div className="arrow-container">
-    <button className="btn btn-circle" onClick={() => handleArrowClick(-1)}>❮</button>
-  </div>
-  
-  <div className="carousel w-full">
-    <div id={`slide${currentSlide}`} className=" carousel-item flex flex-col items-center justify-center w-full">
-      {currentSlide === 1 && (
-        <>
-          <h2 className="text-3xl font-extrabold mb-6 text-center">Step 1: Create a new habit</h2>
-
-          <img src="/workout.png" className="w-90 h-60 p-5 mb-4" />
-          <p className="mb-4">Register a personal habit goal on the blockchain to track your progress.</p>
-        </>
-      )}
-      {currentSlide === 2 && (
-        <>
-          <h2 className="text-3xl font-extrabold mb-6 text-center">Step 2: Stake ETH</h2>
-          <img src="/eth.png" className="w-90 h-60 p-5 mb-4" />
-          <p className="mb-4">Pledge a certain amount of ETH as a commitment to achieving your habit goal.</p>
-        </>
-      )}
-      {currentSlide === 3 && (
-        <>
-          <h2 className="text-3xl font-extrabold mb-6 text-center">Step 3: Check in daily until you reach your goal</h2>
-          <img src="/computer.png" className="w-90 h-60 p-5 mb-4" />
-          <p className="mb-4">Daily check-ins to mark your progress until your habit goal is reached.</p>
-        </>
-      )}
-      {currentSlide === 4 && (
-        <>
-          <h2 className="text-3xl font-extrabold mb-6 text-center">Step 4: Get your ETH back</h2>
-          <img src="/money.png" className="w-90 h-60 p-5 mb-4" />
-          <p className="mb-4">Upon successful completion of your habit goal, reclaim your staked ETH.</p>
-        </>
-      )}
-    </div>
-  </div>
-  
-  <div className="arrow-container">
-    <button className="btn btn-circle" onClick={() => handleArrowClick(1)}>❯</button>
-  </div>
-</div>
-
-
-
-
-    
+          <section className="flex-grow flex items-center justify-center text-center p-4 bg-gradient-to-r from-blue-300 to-blue-500 text-white">
+    <div className='relative flex flex-col items-center w-full max-w-screen-xl mx-auto py-10 h-[500px]'>
+        <div className="arrow-container absolute top-1/2 left-0 ml-4 flex items-center transform -translate-y-1/2">
+            <button className="btn btn-circle" onClick={() => handleArrowClick(-1)}>❮</button>
         </div>
-        
-      </section>
+        <div className="carousel w-full">
+            <div id={`slide${currentSlide}`} className="carousel-item flex flex-col items-center justify-center w-full">
+                {currentSlide === 1 && (
+                    <>
+                        <h2 className="text-3xl font-extrabold mb-6 text-center">Step 1: Create a new habit</h2>
+                        <img src="/workout.png" className="w-90 h-60 p-5 mb-4" />
+                        <p className="mb-4">Register a personal habit goal on the blockchain to track your progress.</p>
+                    </>
+                )}
+                {currentSlide === 2 && (
+                    <>
+                        <h2 className="text-3xl font-extrabold mb-6 text-center">Step 2: Stake ETH</h2>
+                        <img src="/eth.png" className="w-90 h-60 p-5 mb-4" />
+                        <p className="mb-4">Pledge a certain amount of ETH as a commitment to achieving your habit goal.</p>
+                    </>
+                )}
+                {currentSlide === 3 && (
+                    <>
+                        <h2 className="text-3xl font-extrabold mb-6 text-center">Step 3: Check in daily until you reach your goal</h2>
+                        <img src="/computer.png" className="w-90 h-60 p-5 mb-4" />
+                        <p className="mb-4">Daily check-ins to mark your progress until your habit goal is reached.</p>
+                    </>
+                )}
+                {currentSlide === 4 && (
+                    <>
+                        <h2 className="text-3xl font-extrabold mb-6 text-center">Step 4: Get your ETH back</h2>
+                        <img src="/money.png" className="w-90 h-60 p-5 mb-4" />
+                        <p className="mb-4">Upon successful completion of your habit goal, reclaim your staked ETH.</p>
+                    </>
+                )}
+            </div>
+        </div>
+        <div className="arrow-container absolute top-1/2 right-0 mr-4 flex items-center transform -translate-y-1/2">
+            <button className="btn btn-circle" onClick={() => handleArrowClick(1)}>❯</button>
+        </div>
+    </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-8">
