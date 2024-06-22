@@ -29,7 +29,6 @@ const UserHabits = () => {
             }
         }
 
-        // Call fetchHabits initially to load the habits on component mount
         fetchHabits();
 
 const unwatch = publicClient.watchEvent({
@@ -37,7 +36,6 @@ const unwatch = publicClient.watchEvent({
     event: parseAbiItem('event HabitCreated(uint256 indexed id, address indexed proposer, string title)'),
     onLogs: logs => {
         console.log(logs);
-        // Call fetchHabits again whenever an event is detected
         fetchHabits();
     }
 });
@@ -47,12 +45,10 @@ const unwatch2 = publicClient.watchEvent({
     event: parseAbiItem('event CheckedIn(uint256 indexed id, address indexed proposer, uint256 indexed checkedInDays)'),
     onLogs: logs => {
         console.log(logs);
-        // Call fetchHabits again whenever an event is detected
         fetchHabits();
     }
 });
 
-        // Clean up the event listener when the component is unmounted
         return () => {
             unwatch();
             unwatch2();
