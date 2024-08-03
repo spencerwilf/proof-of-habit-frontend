@@ -15,12 +15,12 @@ const Footer = () => {
             <ul className="flex space-x-4">
                 <li className='text-lg'>
                     <a rel='noopener noreferrer' target='_blank' href="https://www.linkedin.com/in/spencer-wilfahrt-1a4604156/" className="text-white">
-                        <FontAwesomeIcon icon={faLinkedin} />
+                        {/* <FontAwesomeIcon icon={faLinkedin} /> */}
                     </a>
                 </li>
                 <li className='text-lg'>
                     <a rel='noopener noreferrer' target='_blank' href="https://github.com/spencerwilf" className="text-white">
-                        <FontAwesomeIcon icon={faGithub} />
+                        {/* <FontAwesomeIcon icon={faGithub} /> */}
                     </a>
                 </li>
             </ul>

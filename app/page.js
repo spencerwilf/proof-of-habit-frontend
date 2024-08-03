@@ -14,6 +14,18 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
       <NavBar />
 
       <div className="flex flex-col min-h-screen">
